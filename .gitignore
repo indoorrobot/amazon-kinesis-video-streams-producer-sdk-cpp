@@ -14,3 +14,5 @@ test-stream/
 *.key
 *.gpg
 cm-file
+.vscode/c_cpp_properties.json
+.vscode/settings.json

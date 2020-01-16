@@ -318,7 +318,7 @@ extern "C" {
 /**
  * Default service call retry count
  */
-#define SERVICE_CALL_MAX_RETRY_COUNT           5
+#define SERVICE_CALL_MAX_RETRY_COUNT           1
 
 /**
  * MKV packaging type string

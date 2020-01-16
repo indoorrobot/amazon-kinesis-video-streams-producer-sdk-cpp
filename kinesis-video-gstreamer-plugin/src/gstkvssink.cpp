@@ -1053,9 +1053,11 @@ gst_kvs_sink_handle_buffer (GstCollectPads * pads,
             goto CleanUp;
         } else {
             // resetStream, note that this will flush out producer buffer
-            data->kinesis_video_stream->resetStream();
+            // data->kinesis_video_stream->resetStream();
             // reset state
-            data->stream_status = STATUS_SUCCESS;
+            //data->stream_status = STATUS_SUCCESS;
+            ret = GST_FLOW_ERROR;
+            goto CleanUp;
         }
     }
 
